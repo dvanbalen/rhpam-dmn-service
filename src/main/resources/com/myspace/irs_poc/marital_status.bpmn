@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_xBem4AdOEeuKbcYIamDHNA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="__TJVsAdOEeuKbcYIamDHNA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_caseFile_taxpayerItem" structureRef="org.irs.demo.Taxpayer"/>
   <bpmn2:itemDefinition id="_caseFile_statusItem" structureRef="String"/>
   <bpmn2:process id="irs_poc.marital_status" drools:packageName="com.myspace.irs_poc" drools:version="1.0" drools:adHoc="true" name="marital_status" isExecutable="true" processType="Public">
     <bpmn2:extensionElements>
       <drools:metaData name="customCaseRoles">
-        <drools:metaValue><![CDATA[servicerep:1,customer:2]]></drools:metaValue>
+        <drools:metaValue><![CDATA[servicerep:1,customer:1]]></drools:metaValue>
       </drools:metaData>
     </bpmn2:extensionElements>
     <bpmn2:property id="caseFile_taxpayer" itemSubjectRef="_caseFile_taxpayerItem" name="caseFile_taxpayer"/>
     <bpmn2:property id="caseFile_status" itemSubjectRef="_caseFile_statusItem" name="caseFile_status"/>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_xBem4QdOEeuKbcYIamDHNA">
-    <bpmndi:BPMNPlane id="_xBem4gdOEeuKbcYIamDHNA" bpmnElement="irs_poc.marital_status"/>
+  <bpmndi:BPMNDiagram id="__TJVsQdOEeuKbcYIamDHNA">
+    <bpmndi:BPMNPlane id="__TJVsgdOEeuKbcYIamDHNA" bpmnElement="irs_poc.marital_status"/>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_xBem4wdOEeuKbcYIamDHNA" type="BPSimData">
+  <bpmn2:relationship id="__TJVswdOEeuKbcYIamDHNA" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
@@ -22,7 +22,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_xBem4AdOEeuKbcYIamDHNA</bpmn2:source>
-    <bpmn2:target>_xBem4AdOEeuKbcYIamDHNA</bpmn2:target>
+    <bpmn2:source>__TJVsAdOEeuKbcYIamDHNA</bpmn2:source>
+    <bpmn2:target>__TJVsAdOEeuKbcYIamDHNA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
