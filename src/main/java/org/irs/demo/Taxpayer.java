@@ -8,7 +8,21 @@ public class Taxpayer implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private boolean active;
+
 	public Taxpayer() {
+	}
+
+	public boolean isActive() {
+		return this.active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public Taxpayer(boolean active) {
+		this.active = active;
 	}
 
 }
