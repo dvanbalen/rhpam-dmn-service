@@ -1,12 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_00EE4C74-BEF4-4FF9-B56E-A1ECF9A7E537" name="Adoption Benefit" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024">
   <dmn:extensionElements/>
-  <dmn:decision id="_30DC34BE-B988-49C5-8814-55ADDFDF1667" name="AddThreeNumbers">
+  <dmn:decision id="_30DC34BE-B988-49C5-8814-55ADDFDF1667" name="AddFirstTwoNumbers">
     <dmn:extensionElements/>
-    <dmn:variable id="_29D9AC11-2216-4111-8B1D-9A75A6D94AB6" name="AddThreeNumbers" typeRef="number"/>
-    <dmn:informationRequirement id="_8BD5D85B-FA33-4FFD-857B-845DE02DEE05">
-      <dmn:requiredInput href="#_4905CA6A-D977-45E5-B541-A121FFA64C44"/>
-    </dmn:informationRequirement>
+    <dmn:variable id="_29D9AC11-2216-4111-8B1D-9A75A6D94AB6" name="AddFirstTwoNumbers" typeRef="number"/>
     <dmn:knowledgeRequirement id="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
       <dmn:requiredKnowledge href="#_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0"/>
     </dmn:knowledgeRequirement>
@@ -22,7 +19,7 @@
       </dmn:binding>
       <dmn:binding>
         <dmn:parameter id="_18E64D2C-19C4-466F-AB46-E7BD98B1EDE1" name="SecondNumber" typeRef="number"/>
-        <dmn:literalExpression id="_EE075192-2D95-46EA-940B-D19A5F29DF45">
+        <dmn:literalExpression id="_A2118BD8-10BC-4B40-BA65-3421B5AFBA46">
           <dmn:text>2</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
@@ -32,6 +29,19 @@
     <dmn:extensionElements/>
     <dmn:variable id="_97E1A89D-FE35-483D-9FEA-43021CDFC431" name="services.AdditionService" typeRef="number"/>
   </dmn:decisionService>
+  <dmn:decision id="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" name="AddThreeNumbers">
+    <dmn:extensionElements/>
+    <dmn:variable id="_1D523FBB-A782-4987-A512-F4F0435EBC94" name="AddThreeNumbers" typeRef="number"/>
+    <dmn:informationRequirement id="_8BD5D85B-FA33-4FFD-857B-845DE02DEE05">
+      <dmn:requiredInput href="#_4905CA6A-D977-45E5-B541-A121FFA64C44"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_535432C4-6155-4187-9895-E2D3D35FE7CF">
+      <dmn:requiredDecision href="#_30DC34BE-B988-49C5-8814-55ADDFDF1667"/>
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="_D09FE31B-7C8F-4784-A7B8-03DD70D55A6F">
+      <dmn:text>AddFirstTwoNumbers + AddThreeNumbers</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
   <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
     <dmn:extensionElements/>
     <dmn:variable id="_8A4AA104-AA31-4A1B-BF51-4CDC7DF98A88" name="ThirdNumber" typeRef="number"/>
@@ -40,6 +50,9 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_D09FE31B-7C8F-4784-A7B8-03DD70D55A6F">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_B173E21F-EBDE-4849-8FA0-11F89F5DFD58">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
@@ -49,11 +62,20 @@
           <kie:ComponentWidths dmnElementRef="_726643DC-8638-4BFE-B648-9B805511FF82">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_EE075192-2D95-46EA-940B-D19A5F29DF45">
+          <kie:ComponentWidths dmnElementRef="_A2118BD8-10BC-4B40-BA65-3421B5AFBA46">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" dmnElementRef="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="707" y="55" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_30DC34BE-B988-49C5-8814-55ADDFDF1667" dmnElementRef="_30DC34BE-B988-49C5-8814-55ADDFDF1667" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -87,7 +109,11 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_8BD5D85B-FA33-4FFD-857B-845DE02DEE05" dmnElementRef="_8BD5D85B-FA33-4FFD-857B-845DE02DEE05">
         <di:waypoint x="671" y="328"/>
-        <di:waypoint x="599" y="222"/>
+        <di:waypoint x="757" y="105"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_535432C4-6155-4187-9895-E2D3D35FE7CF" dmnElementRef="_535432C4-6155-4187-9895-E2D3D35FE7CF">
+        <di:waypoint x="599" y="197"/>
+        <di:waypoint x="757" y="105"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61" dmnElementRef="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
         <di:waypoint x="292" y="230"/>
