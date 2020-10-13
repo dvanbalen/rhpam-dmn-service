@@ -18,9 +18,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_19448505-A5A3-43F9-8FCA-3BB2947F5CC6" name="FirstNumber" typeRef="number"/>
   </dmn:inputData>
-  <dmn:decisionService id="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" name="DecisionService-1">
+  <dmn:decisionService id="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" name="AdditionService">
     <dmn:extensionElements/>
-    <dmn:variable id="_A1CC1071-CA80-4731-A3AA-6CEDFD8C3609" name="DecisionService-1"/>
+    <dmn:variable id="_A1CC1071-CA80-4731-A3AA-6CEDFD8C3609" name="AdditionService" typeRef="number"/>
     <dmn:encapsulatedDecision href="#_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B"/>
     <dmn:inputData href="#_D4C1E7AB-7592-4276-A035-A68A4A433CA2"/>
     <dmn:inputData href="#_4A040F10-94B1-49DB-8915-5FDDDB8CA579"/>
