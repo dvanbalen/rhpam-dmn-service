@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024" xmlns:included1="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_00EE4C74-BEF4-4FF9-B56E-A1ECF9A7E537" name="Adoption Benefit" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024">
   <dmn:extensionElements/>
-  <dmn:import id="_0FD24EF6-AB89-4CF3-920D-DC741B82CAEA" name="Adoption Qualified Expenses" namespace="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" locationURI="Adoption Qualified Expenses.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
+  <dmn:import id="_0FD24EF6-AB89-4CF3-920D-DC741B82CAEA" name="qualifiedExpenses" namespace="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" locationURI="Adoption Qualified Expenses.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:decision id="_30DC34BE-B988-49C5-8814-55ADDFDF1667" name="AddFirstTwoNumbers">
     <dmn:extensionElements/>
     <dmn:variable id="_29D9AC11-2216-4111-8B1D-9A75A6D94AB6" name="AddFirstTwoNumbers" typeRef="number"/>
     <dmn:knowledgeRequirement id="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
-      <dmn:requiredKnowledge href="#_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0"/>
+      <dmn:requiredKnowledge href="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF#_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0"/>
     </dmn:knowledgeRequirement>
     <dmn:invocation id="_B173E21F-EBDE-4849-8FA0-11F89F5DFD58">
       <dmn:literalExpression id="_448CB3BC-495F-47B8-A0AA-F982C55082D9">
-        <dmn:text>services.AdditionService</dmn:text>
+        <dmn:text>qualifiedExpenses.AdditionService</dmn:text>
       </dmn:literalExpression>
       <dmn:binding>
         <dmn:parameter id="_3BCC4AA0-F122-40DF-8349-D4843EE3EEBF" name="FirstNumber" typeRef="number"/>
@@ -26,9 +26,9 @@
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
-  <dmn:decisionService id="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" name="services.AdditionService">
+  <dmn:decisionService id="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" name="qualifiedExpenses.AdditionService">
     <dmn:extensionElements/>
-    <dmn:variable id="_97E1A89D-FE35-483D-9FEA-43021CDFC431" name="services.AdditionService" typeRef="number"/>
+    <dmn:variable id="_97E1A89D-FE35-483D-9FEA-43021CDFC431" name="qualifiedExpenses.AdditionService" typeRef="number"/>
   </dmn:decisionService>
   <dmn:decision id="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" name="AddThreeNumbers">
     <dmn:extensionElements/>
@@ -86,7 +86,7 @@
         <dc:Bounds x="549" y="172" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" dmnElementRef="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" dmnElementRef="included1:_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="59" green="54" blue="201"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
