@@ -1,11 +1,91 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_5CECBE65-F23B-4B20-87C0-49748ED7CB4D" name="Adoption Qualified Expenses" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF">
   <dmn:extensionElements/>
+  <dmn:decision id="_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" name="AddThem">
+    <dmn:extensionElements/>
+    <dmn:variable id="_DD5C3841-7B80-4CD7-9159-406047A2ECC3" name="AddThem" typeRef="number"/>
+    <dmn:informationRequirement id="_BF8D0D16-6914-4123-BA2F-20EABFF802F6">
+      <dmn:requiredInput href="#_D4C1E7AB-7592-4276-A035-A68A4A433CA2"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_162DE4BD-500B-4921-80CE-4448EA714A12">
+      <dmn:requiredInput href="#_4A040F10-94B1-49DB-8915-5FDDDB8CA579"/>
+    </dmn:informationRequirement>
+    <dmn:literalExpression id="_3D682160-370C-409A-BE2B-BED1671E5EB7">
+      <dmn:text>FirstNumber + SecondNumber</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+  <dmn:inputData id="_D4C1E7AB-7592-4276-A035-A68A4A433CA2" name="FirstNumber">
+    <dmn:extensionElements/>
+    <dmn:variable id="_19448505-A5A3-43F9-8FCA-3BB2947F5CC6" name="FirstNumber" typeRef="number"/>
+  </dmn:inputData>
+  <dmn:decisionService id="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" name="DecisionService-1">
+    <dmn:extensionElements/>
+    <dmn:variable id="_A1CC1071-CA80-4731-A3AA-6CEDFD8C3609" name="DecisionService-1"/>
+    <dmn:encapsulatedDecision href="#_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B"/>
+    <dmn:inputData href="#_D4C1E7AB-7592-4276-A035-A68A4A433CA2"/>
+    <dmn:inputData href="#_4A040F10-94B1-49DB-8915-5FDDDB8CA579"/>
+  </dmn:decisionService>
+  <dmn:inputData id="_4A040F10-94B1-49DB-8915-5FDDDB8CA579" name="SecondNumber">
+    <dmn:extensionElements/>
+    <dmn:variable id="_F0DA434B-B613-4771-8DEC-A9F1C9A3FE67" name="SecondNumber" typeRef="number"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_3D682160-370C-409A-BE2B-BED1671E5EB7">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
+      <dmndi:DMNShape id="dmnshape-_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" dmnElementRef="_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="453" y="295" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_D4C1E7AB-7592-4276-A035-A68A4A433CA2" dmnElementRef="_D4C1E7AB-7592-4276-A035-A68A4A433CA2" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="305" y="458" width="120" height="58"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="337" y="71" width="347" height="346"/>
+        <dmndi:DMNLabel/>
+        <dmndi:DMNDecisionServiceDividerLine>
+          <di:waypoint x="337" y="224"/>
+          <di:waypoint x="684" y="224"/>
+        </dmndi:DMNDecisionServiceDividerLine>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_4A040F10-94B1-49DB-8915-5FDDDB8CA579" dmnElementRef="_4A040F10-94B1-49DB-8915-5FDDDB8CA579" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="594" y="458" width="119" height="62"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_BF8D0D16-6914-4123-BA2F-20EABFF802F6" dmnElementRef="_BF8D0D16-6914-4123-BA2F-20EABFF802F6">
+        <di:waypoint x="365" y="487"/>
+        <di:waypoint x="503" y="345"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_162DE4BD-500B-4921-80CE-4448EA714A12" dmnElementRef="_162DE4BD-500B-4921-80CE-4448EA714A12">
+        <di:waypoint x="653.5" y="489"/>
+        <di:waypoint x="503" y="345"/>
+      </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
 </dmn:definitions>
