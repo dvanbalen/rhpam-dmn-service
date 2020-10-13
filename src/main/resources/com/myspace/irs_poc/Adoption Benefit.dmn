@@ -5,8 +5,8 @@
   <dmn:decision id="_30DC34BE-B988-49C5-8814-55ADDFDF1667" name="AddFirstTwoNumbers">
     <dmn:extensionElements/>
     <dmn:variable id="_29D9AC11-2216-4111-8B1D-9A75A6D94AB6" name="AddFirstTwoNumbers" typeRef="number"/>
-    <dmn:knowledgeRequirement id="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
-      <dmn:requiredKnowledge href="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF#_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0"/>
+    <dmn:knowledgeRequirement id="_AB0C0E42-932A-4A32-BD8A-F0E1CAD0DCC1">
+      <dmn:requiredKnowledge href="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF#_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E"/>
     </dmn:knowledgeRequirement>
     <dmn:invocation id="_B173E21F-EBDE-4849-8FA0-11F89F5DFD58">
       <dmn:literalExpression id="_448CB3BC-495F-47B8-A0AA-F982C55082D9">
@@ -26,10 +26,6 @@
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
-  <dmn:decisionService id="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" name="qualifiedExpenses.AdditionService">
-    <dmn:extensionElements/>
-    <dmn:variable id="_97E1A89D-FE35-483D-9FEA-43021CDFC431" name="qualifiedExpenses.AdditionService" typeRef="number"/>
-  </dmn:decisionService>
   <dmn:decision id="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" name="AddThreeNumbers">
     <dmn:extensionElements/>
     <dmn:variable id="_1D523FBB-A782-4987-A512-F4F0435EBC94" name="AddThreeNumbers" typeRef="number"/>
@@ -86,17 +82,17 @@
         <dc:Bounds x="549" y="172" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" dmnElementRef="included1:_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
         <dmndi:DMNStyle>
-          <dmndi:FillColor red="59" green="54" blue="201"/>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="210" y="155" width="164" height="150"/>
+        <dc:Bounds x="214" y="172" width="231" height="150"/>
         <dmndi:DMNLabel/>
         <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="210" y="255"/>
-          <di:waypoint x="374" y="255"/>
+          <di:waypoint x="214" y="272"/>
+          <di:waypoint x="445" y="272"/>
         </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_4905CA6A-D977-45E5-B541-A121FFA64C44" dmnElementRef="_4905CA6A-D977-45E5-B541-A121FFA64C44" isCollapsed="false">
@@ -116,8 +112,8 @@
         <di:waypoint x="599" y="197"/>
         <di:waypoint x="757" y="105"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61" dmnElementRef="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
-        <di:waypoint x="292" y="230"/>
+      <dmndi:DMNEdge id="dmnedge-_AB0C0E42-932A-4A32-BD8A-F0E1CAD0DCC1" dmnElementRef="_AB0C0E42-932A-4A32-BD8A-F0E1CAD0DCC1">
+        <di:waypoint x="329.5" y="247"/>
         <di:waypoint x="549" y="197"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
