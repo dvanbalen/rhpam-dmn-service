@@ -12,16 +12,25 @@
     </dmn:knowledgeRequirement>
     <dmn:invocation id="_B173E21F-EBDE-4849-8FA0-11F89F5DFD58">
       <dmn:literalExpression id="_448CB3BC-495F-47B8-A0AA-F982C55082D9">
-        <dmn:text>services.AddNumbers</dmn:text>
+        <dmn:text>services.AdditionService</dmn:text>
       </dmn:literalExpression>
       <dmn:binding>
-        <dmn:parameter id="_3BCC4AA0-F122-40DF-8349-D4843EE3EEBF" name=""/>
+        <dmn:parameter id="_3BCC4AA0-F122-40DF-8349-D4843EE3EEBF" name="FirstNumber" typeRef="number"/>
+        <dmn:literalExpression id="_726643DC-8638-4BFE-B648-9B805511FF82">
+          <dmn:text>3</dmn:text>
+        </dmn:literalExpression>
+      </dmn:binding>
+      <dmn:binding>
+        <dmn:parameter id="_18E64D2C-19C4-466F-AB46-E7BD98B1EDE1" name="SecondNumber" typeRef="number"/>
+        <dmn:literalExpression id="_EE075192-2D95-46EA-940B-D19A5F29DF45">
+          <dmn:text>2</dmn:text>
+        </dmn:literalExpression>
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
-  <dmn:decisionService id="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" name="AdditionService">
+  <dmn:decisionService id="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" name="services.AdditionService">
     <dmn:extensionElements/>
-    <dmn:variable id="_97E1A89D-FE35-483D-9FEA-43021CDFC431" name="AdditionService" typeRef="number"/>
+    <dmn:variable id="_97E1A89D-FE35-483D-9FEA-43021CDFC431" name="services.AdditionService" typeRef="number"/>
   </dmn:decisionService>
   <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
     <dmn:extensionElements/>
@@ -34,9 +43,15 @@
           <kie:ComponentWidths dmnElementRef="_B173E21F-EBDE-4849-8FA0-11F89F5DFD58">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
-            <kie:width>150.0</kie:width>
+            <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_448CB3BC-495F-47B8-A0AA-F982C55082D9"/>
+          <kie:ComponentWidths dmnElementRef="_726643DC-8638-4BFE-B648-9B805511FF82">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_EE075192-2D95-46EA-940B-D19A5F29DF45">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_30DC34BE-B988-49C5-8814-55ADDFDF1667" dmnElementRef="_30DC34BE-B988-49C5-8814-55ADDFDF1667" isCollapsed="false">
@@ -50,15 +65,15 @@
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" dmnElementRef="_3F0085F6-8AEE-4B76-8E90-743BE3C07BB0" isCollapsed="false">
         <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:FillColor red="59" green="54" blue="201"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="210" y="155" width="134" height="150"/>
+        <dc:Bounds x="210" y="155" width="164" height="150"/>
         <dmndi:DMNLabel/>
         <dmndi:DMNDecisionServiceDividerLine>
           <di:waypoint x="210" y="255"/>
-          <di:waypoint x="344" y="255"/>
+          <di:waypoint x="374" y="255"/>
         </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_4905CA6A-D977-45E5-B541-A121FFA64C44" dmnElementRef="_4905CA6A-D977-45E5-B541-A121FFA64C44" isCollapsed="false">
@@ -70,13 +85,13 @@
         <dc:Bounds x="621" y="303" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61" dmnElementRef="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
-        <di:waypoint x="277" y="230"/>
-        <di:waypoint x="549" y="197"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_8BD5D85B-FA33-4FFD-857B-845DE02DEE05" dmnElementRef="_8BD5D85B-FA33-4FFD-857B-845DE02DEE05">
         <di:waypoint x="671" y="328"/>
         <di:waypoint x="599" y="222"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61" dmnElementRef="_F0FA5D43-0FF4-4D2C-BD6F-0777B52A3F61">
+        <di:waypoint x="292" y="230"/>
+        <di:waypoint x="549" y="197"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
