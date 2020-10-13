@@ -36,7 +36,7 @@
       <dmn:requiredDecision href="#_30DC34BE-B988-49C5-8814-55ADDFDF1667"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_D09FE31B-7C8F-4784-A7B8-03DD70D55A6F">
-      <dmn:text>AddFirstTwoNumbers + AddThreeNumbers</dmn:text>
+      <dmn:text>AddFirstTwoNumbers + ThirdNumber</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
