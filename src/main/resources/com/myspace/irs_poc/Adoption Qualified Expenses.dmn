@@ -31,14 +31,9 @@
     <dmn:informationRequirement id="_F46AA2BC-C08D-420D-B9DC-40D989999CB9">
       <dmn:requiredDecision href="#_5E715D8E-5C72-476A-954D-53765B886371"/>
     </dmn:informationRequirement>
-    <dmn:invocation id="_B37D09AC-451B-4CD5-A2F7-DFFEDEABDAA8">
-      <dmn:literalExpression id="_3EFF60E7-3B0E-4EC9-8E4F-70383C46471E">
-        <dmn:text></dmn:text>
-      </dmn:literalExpression>
-      <dmn:binding>
-        <dmn:parameter id="_C546DB27-5EB7-4870-A76C-CFF8ECA565BE" name="p-1"/>
-      </dmn:binding>
-    </dmn:invocation>
+    <dmn:literalExpression id="_0311EB75-5EA5-46FC-87C1-892904B42D2D">
+      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and expense Expense Carry Forward and </dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Expenses over maximum credit">
     <dmn:extensionElements/>
@@ -51,9 +46,9 @@
       </dmn:literalExpression>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:decision id="_5E715D8E-5C72-476A-954D-53765B886371" name="Expenses did not exceed maximum credit">
+  <dmn:decision id="_5E715D8E-5C72-476A-954D-53765B886371" name="Did not exceed max credit">
     <dmn:extensionElements/>
-    <dmn:variable id="_58298691-4598-477F-BB1B-864DA0AA0B8F" name="Expenses did not exceed maximum credit" typeRef="boolean"/>
+    <dmn:variable id="_58298691-4598-477F-BB1B-864DA0AA0B8F" name="Did not exceed max credit" typeRef="boolean"/>
     <dmn:informationRequirement id="_34B97F33-3BF3-43EF-92AD-9CE2ADB24EF5">
       <dmn:requiredInput href="#_FF72AB63-CBA4-4B48-8CE7-4FFD94C9D211"/>
     </dmn:informationRequirement>
@@ -116,12 +111,9 @@
           <kie:ComponentWidths dmnElementRef="_7ECC0FAB-CFBB-4C89-89F9-C5C1AF28F76E">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_B37D09AC-451B-4CD5-A2F7-DFFEDEABDAA8">
-            <kie:width>50.0</kie:width>
-            <kie:width>100.0</kie:width>
-            <kie:width>150.0</kie:width>
+          <kie:ComponentWidths dmnElementRef="_0311EB75-5EA5-46FC-87C1-892904B42D2D">
+            <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_3EFF60E7-3B0E-4EC9-8E4F-70383C46471E"/>
           <kie:ComponentWidths dmnElementRef="_1E406F83-06E6-4F3F-A827-D1B2B1CEFACD">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
