@@ -19,11 +19,11 @@
   </dmn:decision>
   <dmn:inputData id="_D4C1E7AB-7592-4276-A035-A68A4A433CA2" name="FirstNumber">
     <dmn:extensionElements/>
-    <dmn:variable id="_19448505-A5A3-43F9-8FCA-3BB2947F5CC6" name="FirstNumber" typeRef="number"/>
+    <dmn:variable id="_19448505-A5A3-43F9-8FCA-3BB2947F5CC6" name="FirstNumber" typeRef="cNumber"/>
   </dmn:inputData>
   <dmn:inputData id="_4A040F10-94B1-49DB-8915-5FDDDB8CA579" name="SecondNumber">
     <dmn:extensionElements/>
-    <dmn:variable id="_F0DA434B-B613-4771-8DEC-A9F1C9A3FE67" name="SecondNumber" typeRef="number"/>
+    <dmn:variable id="_F0DA434B-B613-4771-8DEC-A9F1C9A3FE67" name="SecondNumber" typeRef="cNumber"/>
   </dmn:inputData>
   <dmn:decisionService id="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" name="AdditionService">
     <dmn:extensionElements/>
