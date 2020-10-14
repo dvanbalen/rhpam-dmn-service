@@ -13,6 +13,10 @@
     <dmn:extensionElements/>
     <dmn:variable id="_D31E075E-301C-4C93-8054-DCE729F6C2D4" name="Adoption Expenses" typeRef="number"/>
   </dmn:inputData>
+  <dmn:decision id="_A2F48ADB-397E-44F6-952B-5FC63B5858C1" name="Evaluate Scenario 2">
+    <dmn:extensionElements/>
+    <dmn:variable id="_A560501E-23FB-4391-8EF0-CE59F19F3F77" name="Evaluate Scenario 2"/>
+  </dmn:decision>
   <dmn:inputData id="_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" name="Maximum Adoption Credit">
     <dmn:extensionElements/>
     <dmn:variable id="_D1DA09C8-1D19-4AB9-8472-DFC758A43425" name="Maximum Adoption Credit" typeRef="number"/>
@@ -161,6 +165,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="439" y="441" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_A2F48ADB-397E-44F6-952B-5FC63B5858C1" dmnElementRef="_A2F48ADB-397E-44F6-952B-5FC63B5858C1" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="612" y="158" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
