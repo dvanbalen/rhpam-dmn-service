@@ -18,7 +18,7 @@
   </dmn:inputData>
   <dmn:decision id="_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" name="Scenario 1 Decision">
     <dmn:extensionElements/>
-    <dmn:variable id="_DD5C3841-7B80-4CD7-9159-406047A2ECC3" name="Scenario 1 Decision" typeRef="cNumber"/>
+    <dmn:variable id="_DD5C3841-7B80-4CD7-9159-406047A2ECC3" name="Scenario 1 Decision" typeRef="boolean"/>
     <dmn:informationRequirement id="_BF8D0D16-6914-4123-BA2F-20EABFF802F6">
       <dmn:requiredInput href="#_D4C1E7AB-7592-4276-A035-A68A4A433CA2"/>
     </dmn:informationRequirement>
@@ -31,8 +31,8 @@
     <dmn:informationRequirement id="_F46AA2BC-C08D-420D-B9DC-40D989999CB9">
       <dmn:requiredDecision href="#_5E715D8E-5C72-476A-954D-53765B886371"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression id="_0311EB75-5EA5-46FC-87C1-892904B42D2D">
-      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and expense Expense Carry Forward and Did not exceed</dmn:text>
+    <dmn:literalExpression id="_16A3D7B8-5CBF-4A3F-90B0-2DBAF2A5D1C8">
+      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and Expense Expense Carry Forward</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Expenses over maximum credit">
@@ -111,7 +111,7 @@
           <kie:ComponentWidths dmnElementRef="_7ECC0FAB-CFBB-4C89-89F9-C5C1AF28F76E">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_0311EB75-5EA5-46FC-87C1-892904B42D2D">
+          <kie:ComponentWidths dmnElementRef="_16A3D7B8-5CBF-4A3F-90B0-2DBAF2A5D1C8">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1E406F83-06E6-4F3F-A827-D1B2B1CEFACD">
