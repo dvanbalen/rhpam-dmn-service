@@ -32,7 +32,7 @@
       <dmn:requiredDecision href="#_5E715D8E-5C72-476A-954D-53765B886371"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_16A3D7B8-5CBF-4A3F-90B0-2DBAF2A5D1C8">
-      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and Expense Expense Carry Forward</dmn:text>
+      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and Expense Carry Forward</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Expenses over maximum credit">
