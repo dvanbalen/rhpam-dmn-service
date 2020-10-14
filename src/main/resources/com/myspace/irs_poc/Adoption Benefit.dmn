@@ -25,24 +25,28 @@
     <dmn:knowledgeRequirement id="_F3CC2487-B372-4739-B85F-235D74397450">
       <dmn:requiredKnowledge href="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF#_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E"/>
     </dmn:knowledgeRequirement>
-    <dmn:invocation id="_A3DE6F1A-4529-45EB-ADEB-337D34CE45E1">
-      <dmn:literalExpression id="_A9C03515-E7B5-4851-A145-6B305E2331EF">
+    <dmn:invocation id="_5D0AB81D-62E0-465D-98FC-FC3D02E54F9F">
+      <dmn:literalExpression id="_E5B9F67B-8903-4EA7-93ED-92B244884F24">
         <dmn:text>qualifiedExpenses.AdditionService</dmn:text>
       </dmn:literalExpression>
       <dmn:binding>
-        <dmn:parameter id="_9425FEF1-1C2C-492D-9244-389E7C99A80F" name="FirstNumber" typeRef="qualifiedExpenses.cNumber"/>
-        <dmn:literalExpression id="_FDA00675-A6FD-4F4B-ADCC-776D8F1BF065">
+        <dmn:parameter id="_FC9AD7C3-98B4-4C79-8D1D-98C5743DCAED" name="FirstNumber" typeRef="qualifiedExpenses.cNumber"/>
+        <dmn:literalExpression id="_548515E6-F325-4DE4-BAAC-B30899671888">
           <dmn:text>ANumber</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
       <dmn:binding>
-        <dmn:parameter id="_3AAE18E5-BE12-4D7C-8082-84949AF6369B" name="SecondNumber" typeRef="qualifiedExpenses.cNumber"/>
-        <dmn:literalExpression id="_5C9FA0BC-0DED-44F5-9FF1-1AC7971959BC">
+        <dmn:parameter id="_03AF88B5-C38C-48EF-9704-55C426143D4C" name="SecondNumber" typeRef="qualifiedExpenses.cNumber"/>
+        <dmn:literalExpression id="_4F52D53D-2C48-44B9-9C4C-656A8F27D69E">
           <dmn:text>AnotherNumber</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
+  <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
+    <dmn:extensionElements/>
+    <dmn:variable id="_8A4AA104-AA31-4A1B-BF51-4CDC7DF98A88" name="ThirdNumber" typeRef="number"/>
+  </dmn:inputData>
   <dmn:decision id="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" name="AddThreeNumbers">
     <dmn:extensionElements/>
     <dmn:variable id="_1D523FBB-A782-4987-A512-F4F0435EBC94" name="AddThreeNumbers" typeRef="number"/>
@@ -56,24 +60,20 @@
       <dmn:text>AddFirstTwoNumbers + ThirdNumber</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
-    <dmn:extensionElements/>
-    <dmn:variable id="_8A4AA104-AA31-4A1B-BF51-4CDC7DF98A88" name="ThirdNumber" typeRef="number"/>
-  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_A3DE6F1A-4529-45EB-ADEB-337D34CE45E1">
+          <kie:ComponentWidths dmnElementRef="_5D0AB81D-62E0-465D-98FC-FC3D02E54F9F">
             <kie:width>50.0</kie:width>
             <kie:width>100.0</kie:width>
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_A9C03515-E7B5-4851-A145-6B305E2331EF"/>
-          <kie:ComponentWidths dmnElementRef="_FDA00675-A6FD-4F4B-ADCC-776D8F1BF065">
+          <kie:ComponentWidths dmnElementRef="_E5B9F67B-8903-4EA7-93ED-92B244884F24"/>
+          <kie:ComponentWidths dmnElementRef="_548515E6-F325-4DE4-BAAC-B30899671888">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
-          <kie:ComponentWidths dmnElementRef="_5C9FA0BC-0DED-44F5-9FF1-1AC7971959BC">
+          <kie:ComponentWidths dmnElementRef="_4F52D53D-2C48-44B9-9C4C-656A8F27D69E">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_D09FE31B-7C8F-4784-A7B8-03DD70D55A6F">
@@ -108,15 +108,6 @@
         <dc:Bounds x="526" y="280" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" dmnElementRef="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="627" y="51" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_4905CA6A-D977-45E5-B541-A121FFA64C44" dmnElementRef="_4905CA6A-D977-45E5-B541-A121FFA64C44" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -124,6 +115,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="706" y="279" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" dmnElementRef="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="627" y="51" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
