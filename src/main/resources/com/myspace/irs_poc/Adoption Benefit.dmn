@@ -15,7 +15,7 @@
   </dmn:inputData>
   <dmn:decision id="_A2F48ADB-397E-44F6-952B-5FC63B5858C1" name="Evaluate Scenario 2">
     <dmn:extensionElements/>
-    <dmn:variable id="_A560501E-23FB-4391-8EF0-CE59F19F3F77" name="Evaluate Scenario 2"/>
+    <dmn:variable id="_A560501E-23FB-4391-8EF0-CE59F19F3F77" name="Evaluate Scenario 2" typeRef="boolean"/>
     <dmn:literalExpression id="_DAABD52F-5C8F-4174-A0D0-A55573FBB689">
       <dmn:text>false</dmn:text>
     </dmn:literalExpression>
