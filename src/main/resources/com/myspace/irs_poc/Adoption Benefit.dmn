@@ -22,13 +22,16 @@
   </dmn:decision>
   <dmn:decision id="_168DE994-DA7B-4AF9-A865-CD9AFC9FE5FF" name="Taxpayer has qualified expenses">
     <dmn:extensionElements/>
-    <dmn:variable id="_A099562D-BD26-4A80-A28E-59827C8ED883" name="Taxpayer has qualified expenses"/>
+    <dmn:variable id="_A099562D-BD26-4A80-A28E-59827C8ED883" name="Taxpayer has qualified expenses" typeRef="boolean"/>
     <dmn:informationRequirement id="_DD40CF10-F277-42A9-8485-7DB8F4DE7C18">
       <dmn:requiredDecision href="#_9851CB85-6AB0-4597-8784-6DE1C39A7A82"/>
     </dmn:informationRequirement>
     <dmn:informationRequirement id="_D3E285C0-FA18-42A3-AFA8-2E4CF4973D91">
       <dmn:requiredDecision href="#_A2F48ADB-397E-44F6-952B-5FC63B5858C1"/>
     </dmn:informationRequirement>
+    <dmn:literalExpression id="_D7974B2E-0A29-40D6-A934-CEDC0B8321FE">
+      <dmn:text>Evaluate Scenario 1 or Evaluate Scenario 2</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" name="Maximum Adoption Credit">
     <dmn:extensionElements/>
@@ -125,6 +128,9 @@
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_DAABD52F-5C8F-4174-A0D0-A55573FBB689">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_D7974B2E-0A29-40D6-A934-CEDC0B8321FE">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
