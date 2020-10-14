@@ -19,7 +19,7 @@
   </dmn:inputData>
   <dmn:inputData id="_5E9A32B4-A46F-4B78-8B0F-AF2BCD5075A0" name="Expenses were reimbursed">
     <dmn:extensionElements/>
-    <dmn:variable id="_8B0F9E4D-3B5B-49CB-BBB4-F29FCFD08ED7" name="Expenses were reimbursed"/>
+    <dmn:variable id="_8B0F9E4D-3B5B-49CB-BBB4-F29FCFD08ED7" name="Expenses were reimbursed" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:decision id="_9851CB85-6AB0-4597-8784-6DE1C39A7A82" name="Evaluate Scenario 1">
     <dmn:extensionElements/>
