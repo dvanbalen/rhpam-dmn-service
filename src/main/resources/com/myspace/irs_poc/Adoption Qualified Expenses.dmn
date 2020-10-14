@@ -32,7 +32,7 @@
       <dmn:requiredDecision href="#_5E715D8E-5C72-476A-954D-53765B886371"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_0311EB75-5EA5-46FC-87C1-892904B42D2D">
-      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and expense Expense Carry Forward and </dmn:text>
+      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and expense Expense Carry Forward and Did not exceed</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Expenses over maximum credit">
@@ -46,9 +46,9 @@
       </dmn:literalExpression>
     </dmn:encapsulatedLogic>
   </dmn:businessKnowledgeModel>
-  <dmn:decision id="_5E715D8E-5C72-476A-954D-53765B886371" name="Did not exceed max credit">
+  <dmn:decision id="_5E715D8E-5C72-476A-954D-53765B886371" name="Did not exceed">
     <dmn:extensionElements/>
-    <dmn:variable id="_58298691-4598-477F-BB1B-864DA0AA0B8F" name="Did not exceed max credit" typeRef="boolean"/>
+    <dmn:variable id="_58298691-4598-477F-BB1B-864DA0AA0B8F" name="Did not exceed" typeRef="boolean"/>
     <dmn:informationRequirement id="_34B97F33-3BF3-43EF-92AD-9CE2ADB24EF5">
       <dmn:requiredInput href="#_FF72AB63-CBA4-4B48-8CE7-4FFD94C9D211"/>
     </dmn:informationRequirement>
