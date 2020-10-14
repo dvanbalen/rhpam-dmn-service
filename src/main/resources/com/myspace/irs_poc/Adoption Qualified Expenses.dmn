@@ -38,12 +38,12 @@
       <dmn:requiredKnowledge href="#_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125"/>
     </dmn:knowledgeRequirement>
     <dmn:literalExpression id="_3D682160-370C-409A-BE2B-BED1671E5EB7">
-      <dmn:text>FirstNumber + SecondNumber</dmn:text>
+      <dmn:text>Expense Carry Forward and did not Did Exceeded Maximum Adoption Credit?</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
-  <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Did Not Exceed Maximum Adoption Credit">
+  <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Did Exceeded Maximum Adoption Credit?">
     <dmn:extensionElements/>
-    <dmn:variable id="_2F0319A6-8C10-40F7-889B-95594360EBC2" name="Did Not Exceed Maximum Adoption Credit"/>
+    <dmn:variable id="_2F0319A6-8C10-40F7-889B-95594360EBC2" name="Did Exceeded Maximum Adoption Credit?"/>
     <dmn:encapsulatedLogic id="_0AEA9B74-1F00-49F8-AF12-03E662538193" kind="FEEL">
       <dmn:literalExpression id="_1E406F83-06E6-4F3F-A827-D1B2B1CEFACD">
         <dmn:text>(Adoption Expenses - Maximum Adoption Credit) &lt;= 0</dmn:text>
