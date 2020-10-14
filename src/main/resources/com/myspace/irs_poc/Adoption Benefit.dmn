@@ -16,6 +16,19 @@
   <dmn:decision id="_A2F48ADB-397E-44F6-952B-5FC63B5858C1" name="Evaluate Scenario 2">
     <dmn:extensionElements/>
     <dmn:variable id="_A560501E-23FB-4391-8EF0-CE59F19F3F77" name="Evaluate Scenario 2"/>
+    <dmn:literalExpression id="_DAABD52F-5C8F-4174-A0D0-A55573FBB689">
+      <dmn:text>false</dmn:text>
+    </dmn:literalExpression>
+  </dmn:decision>
+  <dmn:decision id="_168DE994-DA7B-4AF9-A865-CD9AFC9FE5FF" name="Taxpayer has qualified expenses">
+    <dmn:extensionElements/>
+    <dmn:variable id="_A099562D-BD26-4A80-A28E-59827C8ED883" name="Taxpayer has qualified expenses"/>
+    <dmn:informationRequirement id="_DD40CF10-F277-42A9-8485-7DB8F4DE7C18">
+      <dmn:requiredDecision href="#_9851CB85-6AB0-4597-8784-6DE1C39A7A82"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_D3E285C0-FA18-42A3-AFA8-2E4CF4973D91">
+      <dmn:requiredDecision href="#_A2F48ADB-397E-44F6-952B-5FC63B5858C1"/>
+    </dmn:informationRequirement>
   </dmn:decision>
   <dmn:inputData id="_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" name="Maximum Adoption Credit">
     <dmn:extensionElements/>
@@ -111,6 +124,9 @@
           <kie:ComponentWidths dmnElementRef="_8222CBA8-F132-47D9-9B12-5C59307F49CA">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_DAABD52F-5C8F-4174-A0D0-A55573FBB689">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_27644815-7D01-41F2-9741-B7660F379EF3" dmnElementRef="_27644815-7D01-41F2-9741-B7660F379EF3" isCollapsed="false">
@@ -176,6 +192,15 @@
         <dc:Bounds x="612" y="158" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_168DE994-DA7B-4AF9-A865-CD9AFC9FE5FF" dmnElementRef="_168DE994-DA7B-4AF9-A865-CD9AFC9FE5FF" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="501" y="40" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="211" green="29" blue="211"/>
@@ -212,6 +237,14 @@
       <dmndi:DMNEdge id="dmnedge-_F3CC2487-B372-4739-B85F-235D74397450" dmnElementRef="_F3CC2487-B372-4739-B85F-235D74397450">
         <di:waypoint x="215.5" y="179"/>
         <di:waypoint x="412" y="179"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_DD40CF10-F277-42A9-8485-7DB8F4DE7C18" dmnElementRef="_DD40CF10-F277-42A9-8485-7DB8F4DE7C18">
+        <di:waypoint x="462" y="179"/>
+        <di:waypoint x="551" y="90"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_D3E285C0-FA18-42A3-AFA8-2E4CF4973D91" dmnElementRef="_D3E285C0-FA18-42A3-AFA8-2E4CF4973D91">
+        <di:waypoint x="662" y="183"/>
+        <di:waypoint x="551" y="90"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
