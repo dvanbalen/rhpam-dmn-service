@@ -6,7 +6,7 @@
   </dmn:itemDefinition>
   <dmn:decision id="_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" name="AddThem">
     <dmn:extensionElements/>
-    <dmn:variable id="_DD5C3841-7B80-4CD7-9159-406047A2ECC3" name="AddThem" typeRef="number"/>
+    <dmn:variable id="_DD5C3841-7B80-4CD7-9159-406047A2ECC3" name="AddThem" typeRef="cNumber"/>
     <dmn:informationRequirement id="_BF8D0D16-6914-4123-BA2F-20EABFF802F6">
       <dmn:requiredInput href="#_D4C1E7AB-7592-4276-A035-A68A4A433CA2"/>
     </dmn:informationRequirement>
