@@ -2,6 +2,9 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024" xmlns:included1="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_00EE4C74-BEF4-4FF9-B56E-A1ECF9A7E537" name="Adoption Benefit" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024">
   <dmn:extensionElements/>
   <dmn:import id="_0FD24EF6-AB89-4CF3-920D-DC741B82CAEA" name="qualifiedExpenses" namespace="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" locationURI="Adoption Qualified Expenses.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
+  <dmn:itemDefinition id="_BD2C3FE6-0DAE-4CE0-A924-64156FACC8FD" name="cNumber" isCollection="false">
+    <dmn:typeRef>number</dmn:typeRef>
+  </dmn:itemDefinition>
   <dmn:inputData id="_3474F32B-63BD-410A-86C0-9B23CB4827CF" name="ANumber">
     <dmn:extensionElements/>
     <dmn:variable id="_D31E075E-301C-4C93-8054-DCE729F6C2D4" name="ANumber" typeRef="number"/>
@@ -40,10 +43,6 @@
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
-  <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
-    <dmn:extensionElements/>
-    <dmn:variable id="_8A4AA104-AA31-4A1B-BF51-4CDC7DF98A88" name="ThirdNumber" typeRef="number"/>
-  </dmn:inputData>
   <dmn:decision id="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" name="AddThreeNumbers">
     <dmn:extensionElements/>
     <dmn:variable id="_1D523FBB-A782-4987-A512-F4F0435EBC94" name="AddThreeNumbers" typeRef="number"/>
@@ -57,6 +56,10 @@
       <dmn:text>AddFirstTwoNumbers + ThirdNumber</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
+  <dmn:inputData id="_4905CA6A-D977-45E5-B541-A121FFA64C44" name="ThirdNumber">
+    <dmn:extensionElements/>
+    <dmn:variable id="_8A4AA104-AA31-4A1B-BF51-4CDC7DF98A88" name="ThirdNumber" typeRef="number"/>
+  </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
@@ -105,15 +108,6 @@
         <dc:Bounds x="526" y="280" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_4905CA6A-D977-45E5-B541-A121FFA64C44" dmnElementRef="_4905CA6A-D977-45E5-B541-A121FFA64C44" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="706" y="279" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" dmnElementRef="_FE7DC545-2E9F-4F0B-84F7-EA3B2FCB0024" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -121,6 +115,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="627" y="51" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_4905CA6A-D977-45E5-B541-A121FFA64C44" dmnElementRef="_4905CA6A-D977-45E5-B541-A121FFA64C44" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="706" y="279" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
