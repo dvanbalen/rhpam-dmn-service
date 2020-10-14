@@ -4,11 +4,11 @@
   <dmn:import id="_0FD24EF6-AB89-4CF3-920D-DC741B82CAEA" name="qualifiedExpenses" namespace="https://kiegroup.org/dmn/_4752B769-FA5F-4DAE-A0F2-AE98B5B2ADFF" locationURI="Adoption Qualified Expenses.dmn" importType="http://www.omg.org/spec/DMN/20180521/MODEL/"/>
   <dmn:inputData id="_3474F32B-63BD-410A-86C0-9B23CB4827CF" name="ANumber">
     <dmn:extensionElements/>
-    <dmn:variable id="_D31E075E-301C-4C93-8054-DCE729F6C2D4" name="ANumber"/>
+    <dmn:variable id="_D31E075E-301C-4C93-8054-DCE729F6C2D4" name="ANumber" typeRef="number"/>
   </dmn:inputData>
   <dmn:inputData id="_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" name="AnotherNumber">
     <dmn:extensionElements/>
-    <dmn:variable id="_D1DA09C8-1D19-4AB9-8472-DFC758A43425" name="AnotherNumber"/>
+    <dmn:variable id="_D1DA09C8-1D19-4AB9-8472-DFC758A43425" name="AnotherNumber" typeRef="number"/>
   </dmn:inputData>
   <dmn:decision id="_9851CB85-6AB0-4597-8784-6DE1C39A7A82" name="AddFirstTwoNumbers">
     <dmn:extensionElements/>
