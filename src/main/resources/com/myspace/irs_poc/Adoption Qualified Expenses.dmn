@@ -114,7 +114,9 @@
     </dmn:informationRequirement>
     <dmn:literalExpression id="_3BC6261C-E581-44C2-A1D9-1FB16202E922">
       <dmn:text>
-Adoption Finalized in Tax Year and Employer Adoption Assistance Program and not Valid Foreign Adoption</dmn:text>
+Adoption Finalized in Tax Year 
+and Employer Adoption Assistance Program 
+and Valid Foreign Adoption</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Expenses over maximum credit">
@@ -152,7 +154,7 @@ Adoption Finalized in Tax Year and Employer Adoption Assistance Program and not 
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_3BC6261C-E581-44C2-A1D9-1FB16202E922">
-            <kie:width>300.0</kie:width>
+            <kie:width>343.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1E406F83-06E6-4F3F-A827-D1B2B1CEFACD">
             <kie:width>300.0</kie:width>
