@@ -32,7 +32,10 @@
       <dmn:requiredDecision href="#_5E715D8E-5C72-476A-954D-53765B886371"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_16A3D7B8-5CBF-4A3F-90B0-2DBAF2A5D1C8">
-      <dmn:text>Expenses were reimbursed and Incurred Reasonable Expenses and Expense Carry Forward and Did not exceed</dmn:text>
+      <dmn:text>Expenses were reimbursed 
+and Incurred Reasonable Expenses 
+and Expense Carry Forward 
+and Did not exceed</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:decision id="_5E715D8E-5C72-476A-954D-53765B886371" name="Did not exceed">
@@ -138,7 +141,7 @@ and not(Valid Foreign Adoption)</dmn:text>
       <di:extension>
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_16A3D7B8-5CBF-4A3F-90B0-2DBAF2A5D1C8">
-            <kie:width>300.0</kie:width>
+            <kie:width>593.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7CF219EE-9E97-45E2-AF10-43C516CC0CF1">
             <kie:width>50.0</kie:width>
@@ -164,23 +167,18 @@ and not(Valid Foreign Adoption)</dmn:text>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_B9DD0D24-17DE-4E52-9F83-095C9C7109C4" dmnElementRef="_B9DD0D24-17DE-4E52-9F83-095C9C7109C4" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_0884EA39-E18C-4D80-84EC-8558A0957615" dmnElementRef="_0884EA39-E18C-4D80-84EC-8558A0957615" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="1059" y="397.64473684210526" width="117" height="65"/>
+        <dc:Bounds x="917" y="28" width="387" height="352"/>
         <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813" dmnElementRef="_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="907" y="398" width="136" height="71"/>
-        <dmndi:DMNLabel/>
+        <dmndi:DMNDecisionServiceDividerLine>
+          <di:waypoint x="917" y="182"/>
+          <di:waypoint x="1304" y="182"/>
+        </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_14BE86D2-6D23-4BF0-A4F9-AE820066C62B" dmnElementRef="_14BE86D2-6D23-4BF0-A4F9-AE820066C62B" isCollapsed="false">
         <dmndi:DMNStyle>
@@ -189,15 +187,6 @@ and not(Valid Foreign Adoption)</dmn:text>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="679" y="454" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_6729DF93-FDE9-4DFA-BCBB-ED120DE97E2E" dmnElementRef="_6729DF93-FDE9-4DFA-BCBB-ED120DE97E2E" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="1202" y="400.1578947368421" width="133" height="64"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" dmnElementRef="_BC17D28C-6C73-4CEF-AB3B-33E2937DFD3B" isCollapsed="false">
@@ -218,6 +207,15 @@ and not(Valid Foreign Adoption)</dmn:text>
         <dc:Bounds x="538" y="264" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813" dmnElementRef="_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="907" y="398" width="136" height="71"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_D4C1E7AB-7592-4276-A035-A68A4A433CA2" dmnElementRef="_D4C1E7AB-7592-4276-A035-A68A4A433CA2" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -225,15 +223,6 @@ and not(Valid Foreign Adoption)</dmn:text>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="58.317757009345826" y="354" width="120" height="58"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_F8C57A9E-AAE9-457B-AA98-D88939C8B729" dmnElementRef="_F8C57A9E-AAE9-457B-AA98-D88939C8B729" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="1059" y="93" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
@@ -248,6 +237,24 @@ and not(Valid Foreign Adoption)</dmn:text>
           <di:waypoint x="337" y="224"/>
           <di:waypoint x="684" y="224"/>
         </dmndi:DMNDecisionServiceDividerLine>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_6729DF93-FDE9-4DFA-BCBB-ED120DE97E2E" dmnElementRef="_6729DF93-FDE9-4DFA-BCBB-ED120DE97E2E" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="1202" y="400.1578947368421" width="133" height="64"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_B9DD0D24-17DE-4E52-9F83-095C9C7109C4" dmnElementRef="_B9DD0D24-17DE-4E52-9F83-095C9C7109C4" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="1059" y="397.64473684210526" width="117" height="65"/>
+        <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_FF72AB63-CBA4-4B48-8CE7-4FFD94C9D211" dmnElementRef="_FF72AB63-CBA4-4B48-8CE7-4FFD94C9D211" isCollapsed="false">
         <dmndi:DMNStyle>
@@ -267,6 +274,15 @@ and not(Valid Foreign Adoption)</dmn:text>
         <dc:Bounds x="337" y="448" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_F8C57A9E-AAE9-457B-AA98-D88939C8B729" dmnElementRef="_F8C57A9E-AAE9-457B-AA98-D88939C8B729" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="1059" y="93" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" dmnElementRef="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -275,19 +291,6 @@ and not(Valid Foreign Adoption)</dmn:text>
         </dmndi:DMNStyle>
         <dc:Bounds x="793" y="264" width="100" height="50"/>
         <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_0884EA39-E18C-4D80-84EC-8558A0957615" dmnElementRef="_0884EA39-E18C-4D80-84EC-8558A0957615" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="917" y="28" width="387" height="352"/>
-        <dmndi:DMNLabel/>
-        <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="917" y="182"/>
-          <di:waypoint x="1304" y="182"/>
-        </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_4A040F10-94B1-49DB-8915-5FDDDB8CA579" dmnElementRef="_4A040F10-94B1-49DB-8915-5FDDDB8CA579" isCollapsed="false">
         <dmndi:DMNStyle>
