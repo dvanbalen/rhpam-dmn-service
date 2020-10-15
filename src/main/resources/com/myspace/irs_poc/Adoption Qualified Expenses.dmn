@@ -65,9 +65,9 @@
       </dmn:binding>
     </dmn:invocation>
   </dmn:decision>
-  <dmn:inputData id="_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813" name="Adoption Finalized in Tax Year">
+  <dmn:inputData id="_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813" name="Adoption Finalized During Tax Year">
     <dmn:extensionElements/>
-    <dmn:variable id="_385C9F9B-CD11-4B85-8647-0D143F5CE814" name="Adoption Finalized in Tax Year" typeRef="boolean"/>
+    <dmn:variable id="_385C9F9B-CD11-4B85-8647-0D143F5CE814" name="Adoption Finalized During Tax Year" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:inputData id="_D4C1E7AB-7592-4276-A035-A68A4A433CA2" name="Expense Carry Forward">
     <dmn:extensionElements/>
@@ -114,7 +114,7 @@
     </dmn:informationRequirement>
     <dmn:literalExpression id="_3BC6261C-E581-44C2-A1D9-1FB16202E922">
       <dmn:text>
-Adoption Finalized in Tax Year 
+Adoption Finalized during Tax Year 
 and Employer Adoption Assistance Program 
 and Valid Foreign Adoption</dmn:text>
     </dmn:literalExpression>
