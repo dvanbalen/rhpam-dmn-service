@@ -289,7 +289,7 @@ and not(Valid Foreign Adoption)</dmn:text>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="793" y="264" width="100" height="50"/>
+        <dc:Bounds x="698.2990654205607" y="267.3421052631579" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_4A040F10-94B1-49DB-8915-5FDDDB8CA579" dmnElementRef="_4A040F10-94B1-49DB-8915-5FDDDB8CA579" isCollapsed="false">
@@ -326,7 +326,7 @@ and not(Valid Foreign Adoption)</dmn:text>
         <di:waypoint x="588" y="314"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_5E6583EF-6883-4A76-92E3-9E52DF406B1F" dmnElementRef="_5E6583EF-6883-4A76-92E3-9E52DF406B1F">
-        <di:waypoint x="843" y="289"/>
+        <di:waypoint x="748.2990654205607" y="292.3421052631579"/>
         <di:waypoint x="638" y="289"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_1C82C443-D4AE-4FE8-8B6D-1E3B89210F63" dmnElementRef="_1C82C443-D4AE-4FE8-8B6D-1E3B89210F63">
