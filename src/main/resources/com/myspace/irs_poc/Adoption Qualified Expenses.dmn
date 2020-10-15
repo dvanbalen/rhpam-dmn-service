@@ -112,6 +112,9 @@
     <dmn:informationRequirement id="_9194EE5B-59D3-4C1F-9350-A1C21F9C782C">
       <dmn:requiredInput href="#_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813"/>
     </dmn:informationRequirement>
+    <dmn:literalExpression id="_3BC6261C-E581-44C2-A1D9-1FB16202E922">
+      <dmn:text>not Adoption Finalized in Tax Year and Employer Adoption Assistance Program and not Valid Foreign Adoption</dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmn:businessKnowledgeModel id="_CDCA09B3-32DF-40D4-94D4-0DA48A0C3125" name="Expenses over maximum credit">
     <dmn:extensionElements/>
@@ -145,6 +148,9 @@
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_7ECC0FAB-CFBB-4C89-89F9-C5C1AF28F76E">
+            <kie:width>300.0</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_3BC6261C-E581-44C2-A1D9-1FB16202E922">
             <kie:width>300.0</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_1E406F83-06E6-4F3F-A827-D1B2B1CEFACD">
