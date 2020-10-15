@@ -67,7 +67,7 @@
   </dmn:decision>
   <dmn:inputData id="_83CDEB50-E3B0-48DE-A858-34A2C9E91350" name="Valid Foreign Adoption">
     <dmn:extensionElements/>
-    <dmn:variable id="_04BC35E7-A9B4-4CDC-A1B9-8D3A444E0000" name="Valid Foreign Adoption"/>
+    <dmn:variable id="_04BC35E7-A9B4-4CDC-A1B9-8D3A444E0000" name="Valid Foreign Adoption" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:inputData id="_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" name="Maximum Adoption Credit">
     <dmn:extensionElements/>
@@ -140,11 +140,11 @@
   </dmn:inputData>
   <dmn:inputData id="_4A25F56D-AF9D-4324-8D62-60F28A5CE2A5" name="Adoption Finalized During Tax Year">
     <dmn:extensionElements/>
-    <dmn:variable id="_2C34719D-2A4E-4D6E-ABEB-B8B33161C3EC" name="Adoption Finalized During Tax Year"/>
+    <dmn:variable id="_2C34719D-2A4E-4D6E-ABEB-B8B33161C3EC" name="Adoption Finalized During Tax Year" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:inputData id="_8E46AE2B-DB69-4841-9008-9E78EAA25057" name="Employer Adoption Assistance Program">
     <dmn:extensionElements/>
-    <dmn:variable id="_82332F99-9F45-4DD7-8258-5CD480A2A6B2" name="Employer Adoption Assistance Program"/>
+    <dmn:variable id="_82332F99-9F45-4DD7-8258-5CD480A2A6B2" name="Employer Adoption Assistance Program" typeRef="boolean"/>
   </dmn:inputData>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
