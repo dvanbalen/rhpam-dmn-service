@@ -169,7 +169,7 @@ and not(Valid Foreign Adoption)</dmn:text>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-_0884EA39-E18C-4D80-84EC-8558A0957615" dmnElementRef="_0884EA39-E18C-4D80-84EC-8558A0957615" isCollapsed="false">
         <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:FillColor red="34" green="191" blue="50"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
@@ -227,7 +227,7 @@ and not(Valid Foreign Adoption)</dmn:text>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
         <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:FillColor red="173" green="48" blue="211"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
