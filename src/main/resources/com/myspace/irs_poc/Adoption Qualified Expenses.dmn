@@ -6,7 +6,7 @@
   </dmn:itemDefinition>
   <dmn:decisionService id="_0884EA39-E18C-4D80-84EC-8558A0957615" name="Adoption Expenses Scenario 2">
     <dmn:extensionElements/>
-    <dmn:variable id="_8FAE8045-6385-404E-9E3F-0514DBDABAB4" name="Adoption Expenses Scenario 2"/>
+    <dmn:variable id="_8FAE8045-6385-404E-9E3F-0514DBDABAB4" name="Adoption Expenses Scenario 2" typeRef="boolean"/>
     <dmn:outputDecision href="#_F8C57A9E-AAE9-457B-AA98-D88939C8B729"/>
     <dmn:inputData href="#_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813"/>
     <dmn:inputData href="#_B9DD0D24-17DE-4E52-9F83-095C9C7109C4"/>
