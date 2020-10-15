@@ -1,0 +1,16 @@
+{
+	"model-namespace":"https://kiegroup.org/dmn/_2D00F7C4-51E1-409E-B6AA-62F879B98024",
+	"model-name":"Adoption Benefit",
+	"decision-name":null,
+	"deision-id":null,
+	"dmn-context": {
+		"Adoption Expenses":20000,
+		"Maximum Adoption Credit":30000,
+		"Expense Carry Forward":true,
+		"Incurred Reasonable Expenses":true,
+		"Expenses were reimbursed":true,
+		"Adoption Finalized During Tax Year":false,
+		"Employer Adoption Assistance Program":true,
+		"Valid Foreign Adoption":false
+	}
+}
