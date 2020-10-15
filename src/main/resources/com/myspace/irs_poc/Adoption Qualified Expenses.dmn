@@ -113,7 +113,7 @@
       <dmn:requiredInput href="#_BEA1C9DD-5B73-40CE-8C2A-9E5A72788813"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_3BC6261C-E581-44C2-A1D9-1FB16202E922">
-      <dmn:text>not Adoption Finalized During Tax Year 
+      <dmn:text>not(Adoption Finalized During Tax Year) 
 and Employer Adoption Assistance Program 
 and Valid Foreign Adoption</dmn:text>
     </dmn:literalExpression>
