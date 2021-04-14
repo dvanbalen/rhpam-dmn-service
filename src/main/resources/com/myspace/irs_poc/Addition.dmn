@@ -15,7 +15,7 @@
   </dmn:inputData>
   <dmn:decision id="_9851CB85-6AB0-4597-8784-6DE1C39A7A82" name="AddFirstTwoNumbers">
     <dmn:extensionElements/>
-    <dmn:variable id="_781A45E7-85F0-4BDB-A88E-195C704FC90D" name="AddFirstTwoNumbers" typeRef="qualifiedExpenses.cNumber"/>
+    <dmn:variable id="_781A45E7-85F0-4BDB-A88E-195C704FC90D" name="AddFirstTwoNumbers" typeRef="mathServices.cNumber"/>
     <dmn:informationRequirement id="_036F8D3C-749E-484E-93CD-56457E4A7684">
       <dmn:requiredInput href="#_3474F32B-63BD-410A-86C0-9B23CB4827CF"/>
     </dmn:informationRequirement>
@@ -27,16 +27,16 @@
     </dmn:knowledgeRequirement>
     <dmn:invocation id="_5D0AB81D-62E0-465D-98FC-FC3D02E54F9F">
       <dmn:literalExpression id="_E5B9F67B-8903-4EA7-93ED-92B244884F24">
-        <dmn:text>qualifiedExpenses.AdditionService</dmn:text>
+        <dmn:text>mathServices.AdditionService</dmn:text>
       </dmn:literalExpression>
       <dmn:binding>
-        <dmn:parameter id="_FC9AD7C3-98B4-4C79-8D1D-98C5743DCAED" name="FirstNumber" typeRef="qualifiedExpenses.cNumber"/>
+        <dmn:parameter id="_FC9AD7C3-98B4-4C79-8D1D-98C5743DCAED" name="FirstNumber" typeRef="mathServices.cNumber"/>
         <dmn:literalExpression id="_548515E6-F325-4DE4-BAAC-B30899671888">
           <dmn:text>ANumber</dmn:text>
         </dmn:literalExpression>
       </dmn:binding>
       <dmn:binding>
-        <dmn:parameter id="_03AF88B5-C38C-48EF-9704-55C426143D4C" name="SecondNumber" typeRef="qualifiedExpenses.cNumber"/>
+        <dmn:parameter id="_03AF88B5-C38C-48EF-9704-55C426143D4C" name="SecondNumber" typeRef="mathServices.cNumber"/>
         <dmn:literalExpression id="_4F52D53D-2C48-44B9-9C4C-656A8F27D69E">
           <dmn:text>AnotherNumber</dmn:text>
         </dmn:literalExpression>
