@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
-  <artifactId>irs_poc</artifactId>
+  <artifactId>math_service</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>irs_poc</name>
+  <name>math_service</name>
   <description>PoC showing IRS marital status usecase</description>
   <dependencies>
     <dependency>
