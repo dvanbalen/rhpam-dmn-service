@@ -90,6 +90,19 @@
         <dc:Bounds x="442" y="408" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="211" green="29" blue="211"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="215" y="230" width="231" height="150"/>
+        <dmndi:DMNLabel/>
+        <dmndi:DMNDecisionServiceDividerLine>
+          <di:waypoint x="215" y="330"/>
+          <di:waypoint x="446" y="330"/>
+        </dmndi:DMNDecisionServiceDividerLine>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" dmnElementRef="_945CC10A-E2BE-4683-88D1-44D09EAB5CDD" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -125,19 +138,6 @@
         </dmndi:DMNStyle>
         <dc:Bounds x="627" y="51" width="100" height="50"/>
         <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" dmnElementRef="included1:_9BB69B12-E3C1-4772-BB69-BB2B49A76F5E" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="211" green="29" blue="211"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="215" y="230" width="231" height="150"/>
-        <dmndi:DMNLabel/>
-        <dmndi:DMNDecisionServiceDividerLine>
-          <di:waypoint x="215" y="330"/>
-          <di:waypoint x="446" y="330"/>
-        </dmndi:DMNDecisionServiceDividerLine>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_036F8D3C-749E-484E-93CD-56457E4A7684" dmnElementRef="_036F8D3C-749E-484E-93CD-56457E4A7684">
         <di:waypoint x="492" y="433"/>
